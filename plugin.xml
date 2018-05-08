@@ -44,18 +44,7 @@
   </platform>
   <platform name="ios">
     <source-file src="src/ios/ContentSync.m"/>
-    <source-file src="src/ios/SSZipArchive.m" target-dir="minizip"/>
-    <source-file src="src/ios/minizip/zip.c" target-dir="minizip"/>
-    <source-file src="src/ios/minizip/unzip.c" target-dir="minizip"/>
-    <source-file src="src/ios/minizip/mztools.c" target-dir="minizip"/>
-    <source-file src="src/ios/minizip/ioapi.c" target-dir="minizip"/>
     <header-file src="src/ios/ContentSync.h"/>
-    <header-file src="src/ios/SSZipArchive.h" target-dir="minizip"/>
-    <header-file src="src/ios/minizip/zip.h" target-dir="minizip"/>
-    <header-file src="src/ios/minizip/unzip.h" target-dir="minizip"/>
-    <header-file src="src/ios/minizip/mztools.h" target-dir="minizip"/>
-    <header-file src="src/ios/minizip/ioapi.h" target-dir="minizip"/>
-    <header-file src="src/ios/minizip/crypt.h" target-dir="minizip"/>
     <config-file target="config.xml" parent="/*">
       <feature name="Sync">
         <param name="ios-package" value="ContentSync"/>
